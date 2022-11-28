@@ -1,0 +1,277 @@
+body {
+  text-align: center;
+  line-height: 1.5;
+  background-image: linear-gradient(#7895B2, #AEBDCA);
+
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+
+}
+
+h1 {
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 3rem;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+
+h2,
+h3 {
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 2rem;
+  margin: auto;
+}
+
+
+
+#copyright {
+  position: flex;
+  text-align: center;
+  width: 100%;
+  height: 2.5rem;
+
+}
+
+img{
+  height: 150px;
+
+
+}
+
+.container {
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 25px 50px;
+  width: 80vw;
+  text-align: center;
+}
+
+.action {
+  max-width: 2000px;
+  padding: 80px 80px;
+  margin: 0 auto;
+  background-color: #FFD8CC;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.options {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: center 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: cover 4px 3px;
+  position: relative;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 150px;
+}
+
+.options:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+
+.display-moves {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  
+
+}
+
+.move{
+ filter:drop-shadow(1px 1px 10px #F1F0D1)
+
+}
+
+.separator {
+  font-size: 5em;
+}
+
+/**Options Animations**/
+
+.rock {
+  background-color: #A27B5C;
+}
+
+
+.paper {
+  background-color: #BA6B57;
+}
+
+
+.scissors {
+  background-color: #30475E;
+}
+
+
+.lizard {
+  background-color: #BCCC9A;
+}
+
+
+.spock {
+  background-color: #8FC1D4;
+}
+
+
+
+
+/**Rules button/
+
+/* Style the Image Used to Trigger the Modal */
+#rulesButton {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  bottom: 0;
+  width: 20%;
+  height: 2.5rem;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+#rulesButton:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;  
+  height: auto;
+
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+/*Play Again*/
+.playagain {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 25px;
+  bottom: 0;
+  width: 50%;
+  height: 5rem;
+  margin: 50px auto;
+}
+
+.playagain:hover {
+  opacity: 0.7;
+}
+
